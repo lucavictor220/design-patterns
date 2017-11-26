@@ -4,5 +4,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world");
+        AbstractUTMFactory studentFactory = FactoryProducer.getFactory("STUDENT");
+        AbstractUTMFactory teacherFactory = FactoryProducer.getFactory("TEACHER");
     }
 }

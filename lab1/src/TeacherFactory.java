@@ -13,6 +13,13 @@ public class TeacherFactory extends AbstractUTMFactory {
 
     @Override
     Teacher getTeacher(String teacherGroup) {
-        return null;
+        switch (teacherGroup) {
+            case "FAF":
+                return new FAFProfessor();
+            case "TI":
+                return new TIProfessor();
+            default:
+                return null;
+        }
     }
 }

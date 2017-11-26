@@ -5,7 +5,7 @@ import interfaces.Teacher;
  */
 public class TIProfessor implements Teacher {
     @Override
-    public void getName() {
-
+    public void present() {
+        System.out.println("Reads slides.");
     }
 }

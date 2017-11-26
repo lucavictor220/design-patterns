@@ -5,7 +5,7 @@ import interfaces.Teacher;
  */
 public class FAFProfessor implements Teacher {
     @Override
-    public void getName() {
-
+    public void present() {
+        System.out.println("Explain slides and give real examples");
     }
 }

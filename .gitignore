@@ -1,0 +1,6 @@
+
+# ignore /out/
+**/out/
+
+# ignore example folder for trying things
+example/

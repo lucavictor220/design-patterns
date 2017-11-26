@@ -1,3 +1,8 @@
+# ignore .idea
+**/.idea/
+
+# ignore .idea in root
+.idea/
 
 # ignore /out/
 **/out/

@@ -5,4 +5,6 @@ package interfaces;
  */
 public interface Student {
     void learn();
+    void showsWhatHeOrSheCanDo();
+
 }

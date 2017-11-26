@@ -9,6 +9,7 @@ public class Main {
         AbstractUTMFactory studentFactory = FactoryProducer.getFactory("STUDENT");
         AbstractUTMFactory teacherFactory = FactoryProducer.getFactory("TEACHER");
 
+
         assert studentFactory != null;
         Student fafStudent = studentFactory.getStudent("FAF");
         Student tiStudent = studentFactory.getStudent("TI");
@@ -20,8 +21,11 @@ public class Main {
         Teacher Bostan = teacherFactory.getTeacher("FAF");
         Teacher Besliu = teacherFactory.getTeacher("TI");
 
+
         fafStudent.learn();
+        fafStudent.showsWhatHeOrSheCanDo();
         tiStudent.learn();
+        tiStudent.showsWhatHeOrSheCanDo();
 
         Bostan.present();
         Besliu.present();

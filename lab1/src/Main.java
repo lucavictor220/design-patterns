@@ -6,6 +6,7 @@ import interfaces.Teacher;
  */
 public class Main {
     public static void main(String[] args) {
+        UTM utmUniversity = UTM.getInstance();
         AbstractUTMFactory studentFactory = FactoryProducer.getFactory("STUDENT");
         AbstractUTMFactory teacherFactory = FactoryProducer.getFactory("TEACHER");
 
@@ -21,6 +22,9 @@ public class Main {
         Teacher Bostan = teacherFactory.getTeacher("FAF");
         Teacher Besliu = teacherFactory.getTeacher("TI");
 
+        utmUniversity.addProfesor(Bostan);
+        utmUniversity.addProfesor(Besliu);
+
 
         fafStudent.learn();
         fafStudent.showsWhatHeOrSheCanDo();
@@ -30,5 +34,6 @@ public class Main {
         Bostan.present();
         Besliu.present();
 
+        utmUniversity.showUTMProffesors();
     }
 }

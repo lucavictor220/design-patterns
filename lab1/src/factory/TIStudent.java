@@ -2,12 +2,14 @@ package factory;
 
 import builder.SkillSet;
 import builder.SkillSetBuilder;
+import interfaces.Phone;
 import interfaces.Student;
 
 /**
  * Created by vitiok on 11/26/17.
  */
 public class TIStudent implements Student {
+    private Phone phone;
     private SkillSetBuilder builder = new SkillSetBuilder();
     public SkillSet tiSkillSet = builder.createTIStudengSkillSet();
     public void learn() {
@@ -19,5 +21,13 @@ public class TIStudent implements Student {
         System.out.println("================ TI student ================");
         tiSkillSet.showSkillSet();
         System.out.println("================ TI student ================");
+        System.out.println("================ My phone rings... ================");
+        phone.ring();
+        System.out.println("================ My phone rings... ================");
+    }
+
+    @Override
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 }

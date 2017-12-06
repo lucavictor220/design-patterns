@@ -11,7 +11,7 @@ import interfaces.Teacher;
 public class StudentFactory extends AbstractUTMFactory {
 
     @Override
-    Student getStudent(String studentGroup) {
+    public Student getStudent(String studentGroup) {
         switch (studentGroup) {
             case "FAF":
                 return new FAFStudent();
@@ -23,7 +23,7 @@ public class StudentFactory extends AbstractUTMFactory {
     }
 
     @Override
-    Teacher getTeacher(String teacherGroup) {
+    public Teacher getTeacher(String teacherGroup) {
         return null;
     }
 }

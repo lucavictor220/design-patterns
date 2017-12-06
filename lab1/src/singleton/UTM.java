@@ -1,3 +1,5 @@
+package singleton;
+
 import interfaces.Teacher;
 
 import java.util.ArrayList;
@@ -24,10 +26,10 @@ public class UTM {
     }
 
     public void showUTMProffesors() {
-        System.out.println("======= UTM Stuff =====");
+        System.out.println("======= singleton.UTM Stuff =====");
         for (Teacher teacher : teachers) {
             teacher.present();
         }
-        System.out.println("======= UTM Stuff =====");
+        System.out.println("======= singleton.UTM Stuff =====");
     }
 }

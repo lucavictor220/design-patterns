@@ -1,19 +1,19 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 
 /**
  * Created by vitiok on 11/26/17.
  */
-public class BashScripting implements Skill {
+public class ML implements Skill {
     @Override
     public String name() {
-        return "Bash Scripting";
+        return "Machine Learning";
     }
 
     @Override
     public int timeToLearn() {
-        return 1;
+        return 2;
     }
 
     @Override

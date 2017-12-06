@@ -1,14 +1,14 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 
 /**
  * Created by vitiok on 11/26/17.
  */
-public class HTML implements Skill {
+public class MultipleOSInstalation implements Skill {
     @Override
     public String name() {
-        return "HTML";
+        return "Multiple OS Instalation";
     }
 
     @Override

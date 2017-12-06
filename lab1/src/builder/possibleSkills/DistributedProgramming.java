@@ -1,4 +1,4 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 

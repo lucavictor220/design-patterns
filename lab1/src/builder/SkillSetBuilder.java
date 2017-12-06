@@ -1,4 +1,6 @@
-import possibleSkills.*;
+package builder;
+
+import builder.possibleSkills.*;
 
 /**
  * Created by vitiok on 11/26/17.

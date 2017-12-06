@@ -1,23 +1,23 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 
 /**
  * Created by vitiok on 11/26/17.
  */
-public class MultipleOSInstalation implements Skill {
+public class JavaProgramming implements Skill {
     @Override
     public String name() {
-        return "Multiple OS Instalation";
+        return "Java Programming";
     }
 
     @Override
     public int timeToLearn() {
-        return 1;
+        return 2;
     }
 
     @Override
     public float priceAsEployee() {
-        return 100;
+        return 300;
     }
 }

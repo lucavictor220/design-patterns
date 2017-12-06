@@ -1,14 +1,14 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 
 /**
  * Created by vitiok on 11/26/17.
  */
-public class Cooking implements Skill {
+public class BashScripting implements Skill {
     @Override
     public String name() {
-        return "Cooking";
+        return "Bash Scripting";
     }
 
     @Override
@@ -18,6 +18,6 @@ public class Cooking implements Skill {
 
     @Override
     public float priceAsEployee() {
-        return 100;
+        return 300;
     }
 }

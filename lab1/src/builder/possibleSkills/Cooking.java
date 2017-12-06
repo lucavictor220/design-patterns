@@ -1,23 +1,23 @@
-package possibleSkills;
+package builder.possibleSkills;
 
 import interfaces.Skill;
 
 /**
  * Created by vitiok on 11/26/17.
  */
-public class ML implements Skill {
+public class Cooking implements Skill {
     @Override
     public String name() {
-        return "Machine Learning";
+        return "Cooking";
     }
 
     @Override
     public int timeToLearn() {
-        return 2;
+        return 1;
     }
 
     @Override
     public float priceAsEployee() {
-        return 300;
+        return 100;
     }
 }

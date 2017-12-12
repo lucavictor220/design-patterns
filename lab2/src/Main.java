@@ -1,6 +1,5 @@
 import adapter.*;
 import bridge.AbstractAccount;
-import bridge.InternetBanking;
 import bridge.StudentAccount;
 import bridge.internetBanking.MaibInternetBanking;
 import bridge.internetBanking.VictoriaBankInternetBanking;
